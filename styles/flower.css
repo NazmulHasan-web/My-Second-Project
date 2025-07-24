@@ -15,6 +15,11 @@
 .common-color{
     font-size: 22px;
     color: #000000;
+
+}
+.common-font{
+    font-weight: bold;
+    font-size: 50px;
 }
 .Name{
     font-size: 22px;
@@ -101,9 +106,34 @@
 
 }
 .title-subtitle-container h2{
-    font-weight: bold;
-    font-size: 50px;
     margin-bottom: 16px;
+}
+/* plants lover section related styles */
+.position-relative{
+    position: relative;
+}
+.trusted-badge{
+    width: 280px;
+    height: 280px;
+    margin-left: 347px;
+    top: -700px;
+}
+.flower-store{
+    width: 540px;
+     height: 580px; 
+    margin-right: 60px;
+}
+.common-font, .common-color{
+    margin-bottom: 20px;
+}
+.plants-lover-right{
+    margin-top: 40px;
+}
+.plants-lover{
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-top: 200px;
+    justify-content: space-between;
 }
 /* For mobile responsive */
 @media screen and (max-width:776px) {
@@ -139,5 +169,10 @@
         display: grid;
         grid-template-columns: repeat(2,1fr);
     }
-    
+    .trusted-badge{
+        display: none;
+    }
+    .plants-lover{
+        flex-direction: column;
+    }
 }

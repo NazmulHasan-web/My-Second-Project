@@ -6,6 +6,8 @@
     font-family: "Inter", sans-serif;
 }
 body{
+    max-width: 1440px;
+    margin: 0 auto;
 
 }
 /* shared related styles */
@@ -46,8 +48,8 @@ body{
 /* header related styles */
 
 .navbar{
-     max-width: 1140px;
-    margin: 0 auto; 
+     /* max-width: 1140px; */
+    margin: 0 auto;
     justify-content: space-between;
     align-items: center;
     
@@ -246,6 +248,37 @@ body{
     width: 185px;
     height: 50px;
     background-color: #E95A08;
+}
+.btn-email{
+    display: flex;
+    margin: 0px;
+    gap: 0px;
+    border: none;
+}
+/* footer related style */
+.footer{
+    max-width: 1140px;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+.footer-img{
+    width: 360px;
+}
+.footer-list{
+    list-style: none;
+    gap: 30px;
+}
+.list-item li{
+    margin-bottom: 15px;
+}
+.icon{
+    margin-left: 100px;
+
+}
+.icon img{
+    margin-left: 15px;
 }
 /* For mobile responsive */
 @media screen and (max-width:576px) {

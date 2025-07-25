@@ -5,6 +5,9 @@
      box-sizing: border-box; 
     font-family: "Inter", sans-serif;
 }
+body{
+
+}
 /* shared related styles */
 .disply-flex{
     display: flex;
@@ -35,7 +38,7 @@
 .btn-primary{
     font-weight: 600;
     font-size: 16px;
-    padding: 20px 80px;
+    padding: 20px 50px;
     margin-top: 30px;
     border-radius: 10px;
     background-color: #E95A08;
@@ -127,16 +130,125 @@
     margin-bottom: 20px;
 }
 .plants-lover-right{
+    max-width: 540px;
     margin-top: 40px;
+    margin-left: 60px
+}
+.plants-lover-left{
+    max-width: 540px;
+    height: 590px;
 }
 .plants-lover{
     max-width: 1140px;
+    height: 600px;
     margin: 0 auto;
     margin-top: 200px;
     justify-content: space-between;
 }
+/* join section related style */
+.join{
+    /* max-width: 1440px; */
+    margin-top: 130px;
+}
+.text-container{
+    max-width: 1440px;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+    margin-bottom: 120px;
+
+}
+.img-container{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    text-align: center;
+    color: white; 
+    
+}
+.first-column-upper-img{
+    position: relative;
+}
+.first-column-lower-img{
+    position: relative;
+}
+.second-column-img{
+    position: relative;
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    
+}
+.text h2{
+    font-weight: bold;
+    font-size: 2.5rem;
+    width: 400px;
+}
+.text h3{
+    width: 300px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.second-column-img a{
+    color: white;
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+.deal-bloom, .deal-ana{
+    height: 50%;
+    flex: 1;
+    border-radius: 14px;
+}
+.first-column-img a{
+    /* position: relative;
+    text-align: center; */
+    font-weight: 600;
+    font-size: 1rem;
+    color: white;
+    
+}
+.first-column-img > img{
+    width: 365px;
+    height: 420px;
+    
+}
+.second-column-img > img{
+    width: 750px;
+    height: 420px;
+    border-radius: 20px;
+}
+.colurful-bunch{
+    max-width: 1440px;
+    height: 535px;
+    margin: 0 auto;
+    margin-top: 120px;
+    text-align: center;
+    position: relative;
+}
+.colorful-imag{
+    /* width:1440px;
+    height: 535px;
+    align-items: center; */
+}
+.form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+.btn-subscribe{
+    width: 185px;
+    height: 50px;
+    background-color: #E95A08;
+}
 /* For mobile responsive */
-@media screen and (max-width:776px) {
+@media screen and (max-width:576px) {
      .navbar{
         padding: 25px;
     }
@@ -174,5 +286,17 @@
     }
     .plants-lover{
         flex-direction: column;
+    }
+    .plants-lover-left{
+        width: 100%;
+    }
+    .img-container{
+        flex-direction: column;
+    }
+    .join{
+        margin-top: 900px;
+    }
+    .colurful-bunch{
+        width: 100%;
     }
 }

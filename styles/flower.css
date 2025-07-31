@@ -68,7 +68,6 @@ li a:hover{
 /* header related styles */
 
 .navbar{
-    border: 2px solid red;
     max-width: 1140px;
     width: 100%; 
     margin: 0 auto; 
@@ -88,7 +87,6 @@ li a:hover{
     color: #252432;
 }
 .banner{
-    border: 2px solid red;
     max-width: 1140px;
     width: 100%;
     padding: 0 15px;
@@ -117,26 +115,28 @@ li a:hover{
     max-width: 1140px; 
     width: 100%;
     margin: 0 auto; 
+    text-align: center;
+    padding: 40px 20px;
     margin-top: 120px;
-    border: 2px solid red;
-    outline: auto;  
 }
 .card-container{
-    width: 1140px;
     display: grid;
-    grid-template-columns: repeat(4,1fr); 
-    margin-top: 50px;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 30px; 
     gap: 20px;  
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    padding: 10px;
     
 }
 .card{
-    width: 270px;
-    text-align: center;
+    padding: 10px;
     margin-bottom: 25px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
    
 }
+.card img{
+    width: 100%;
+}
+
 .card p{
     margin-top: 30px;
 }
@@ -166,16 +166,10 @@ li a:hover{
 .common-font, .common-color{
    margin-top: 20px;
 }
-/* .plants-lover-left,
-.plants-lover-right {
-  flex: 1 1 50%;
-  box-sizing: border-box;
-} */
 .plants-lover-right{
     padding: 20px;
     width: 100%;
-    
-   
+      
 }
 .plants-lover-left{
     position: relative;
@@ -190,7 +184,6 @@ li a:hover{
     max-width: 1140px; 
     margin: 0 auto;
     margin-top: 100px;
-    border: 2px solid red;
 }
 .text-container{
     /* max-width: 1140px; */
@@ -198,7 +191,6 @@ li a:hover{
     margin: 0 auto;
     justify-content: center;
     margin-bottom: 120px;
-    border: 2px solid red;
 
 }
 .img-container{
@@ -209,7 +201,6 @@ li a:hover{
     gap: 28px;
     text-align: center;
     color: white; 
-    border: 2px solid red;
 }
 .img-container img{
     width: 100%;
@@ -255,8 +246,6 @@ li a:hover{
     border-radius: 14px;
 }
 .first-column-img a{
-    /* position: relative;
-    text-align: center; */
     font-weight: 600;
     font-size: 1rem;
     color: white;
@@ -272,13 +261,12 @@ li a:hover{
     position: relative;
 }
 .colorful-img{
-     /* width:1440px; */
     width: 100%; 
     height: auto;
     display: block;
     align-items: center; 
     margin: 0 auto;
-    /* padding-left: 30px; */
+
 }
 .form{
     position: absolute;
@@ -286,7 +274,6 @@ li a:hover{
     left: 50%;
     transform: translate(-50%,-50%);
     color: white;
-    border: 2px solid red;
 }
 .btn-subscribe{
     width: 185px;
@@ -298,7 +285,6 @@ li a:hover{
     margin: 0px;
     gap: 0px;
     border: none;
-    border: 2px solid red;
     align-items: center;
 }
 /* footer related style */
@@ -309,20 +295,14 @@ li a:hover{
     justify-content: space-around;
     align-items: center;
     margin-top: 50px;
-    border: 2px solid red;
 }
 .footer-img{
     width: 360px;
-    border: 2px solid red; 
-   
-    
-
 }
 .footer-list{
     list-style: none;
     gap: 30px;
     margin-left: 110px;
-    border: 2px solid red;
 }
 .list-item li{
     margin-bottom: 30px;
@@ -332,8 +312,7 @@ li a:hover{
     text-decoration: underline;
     cursor: pointer;
 }
-.icon{
-     border: 2px solid red; 
+.icon{ 
      margin-left: 50px; 
     
 
@@ -367,6 +346,7 @@ li a:hover{
     }
     .card{
         width: 100%;
+        height: 100%;
     }
     .plants-lover{
         flex-direction: column;
@@ -386,4 +366,5 @@ li a:hover{
     .banner h2{
         font-size: 2rem;
     }
+    
 }

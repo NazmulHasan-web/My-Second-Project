@@ -2,12 +2,18 @@
 *{
     margin: 0;
     padding: 0;
-     box-sizing: border-box; 
+    box-sizing: border-box; 
     font-family: "Inter", sans-serif;
+    
+
 }
+.hide {
+    display: none;
+}
+
 body{
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 0 auto; 
 
 }
 /* shared related styles */
@@ -18,29 +24,43 @@ body{
     color: #E95A08;
 }
 .common-color{
-    font-size: 22px;
+    font-size: 1.2rem;
     color: #000000;
 
 }
 .common-font{
     font-weight: bold;
-    font-size: 50px;
+    font-size: 3.12rem;
 }
 .Name{
-    font-size: 22px;
+    font-size: 1.38rem;
     font-weight: 400;
     color: #111111;
 }
 .price{
     font-weight: bold;
-    font-size: 22px;
+    font-size: 1.38rem;
     color: #111111;
+
+}
+button:hover{
+    color: aqua;
+    text-decoration: underline;
+     cursor: pointer; 
+}
+li a:hover{
+    color: chartreuse;
+    text-decoration: underline;
+}
+.img-container a:hover{
+    color: aqua;
+    cursor: pointer;
 
 }
 .btn-primary{
     font-weight: 600;
-    font-size: 16px;
-    padding: 20px 50px;
+    font-size: 1rem;
+    padding: 20px 20px;
     margin-top: 30px;
     border-radius: 10px;
     background-color: #E95A08;
@@ -48,26 +68,30 @@ body{
 /* header related styles */
 
 .navbar{
-     /* max-width: 1140px; */
-    margin: 0 auto;
+    border: 2px solid red;
+    max-width: 1140px;
+    width: 100%; 
+    margin: 0 auto; 
+    padding: 0 15px; 
     justify-content: space-between;
     align-items: center;
+    display: flex;
     
    
 }
 .nav-item{
     list-style: none;
-    /* margin-right: 35px; */
-}
-.Menu-items{
-    gap: 40px;
+     margin-right: 30px; 
 }
 .nav-link{
     text-decoration: none;
     color: #252432;
 }
 .banner{
+    border: 2px solid red;
     max-width: 1140px;
+    width: 100%;
+    padding: 0 15px;
     justify-content: space-between;
     margin: 0 auto;
     align-items: center;
@@ -75,7 +99,7 @@ body{
 
 }
 .banner h2{
-    font-size: 65px;
+    font-size: 4rem;
     font-weight: 700;
     margin-bottom: 25px;
 }
@@ -84,24 +108,34 @@ body{
     gap: 15px;
 }
 .banner-right img{
-    
+    max-width: 570px;
+    width: 100%;
+
 }
 /* Main related styles */
 .plants{
-    max-width: 1140px;
-    margin: 0 auto;
+    max-width: 1140px; 
+    width: 100%;
+    margin: 0 auto; 
     margin-top: 120px;
+    border: 2px solid red;
+    outline: auto;  
 }
 .card-container{
+    width: 1140px;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4,1fr); 
     margin-top: 50px;
-    gap: 20px;
+    gap: 20px;  
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    
 }
 .card{
+    width: 270px;
     text-align: center;
     margin-bottom: 25px;
+   
 }
 .card p{
     margin-top: 30px;
@@ -114,50 +148,57 @@ body{
     margin-bottom: 16px;
 }
 /* plants lover section related styles */
-.position-relative{
-    position: relative;
-}
-.trusted-badge{
-    width: 280px;
-    height: 280px;
-    margin-left: 347px;
-    top: -700px;
-}
-.flower-store{
-    width: 540px;
-     height: 580px; 
-    margin-right: 60px;
-}
-.common-font, .common-color{
-    margin-bottom: 20px;
-}
-.plants-lover-right{
-    max-width: 540px;
-    margin-top: 40px;
-    margin-left: 60px
-}
-.plants-lover-left{
-    max-width: 540px;
-    height: 590px;
-}
 .plants-lover{
     max-width: 1140px;
-    height: 600px;
     margin: 0 auto;
-    margin-top: 200px;
-    justify-content: space-between;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 60px;
+    margin-top: 150px;
 }
+.trusted-badge{
+    width: 286px;
+    height: 286px;
+    position: absolute;
+    margin-top: -130px;
+    margin-left: -180px; 
+}
+.common-font, .common-color{
+   margin-top: 20px;
+}
+/* .plants-lover-left,
+.plants-lover-right {
+  flex: 1 1 50%;
+  box-sizing: border-box;
+} */
+.plants-lover-right{
+    padding: 20px;
+    width: 100%;
+    
+   
+}
+.plants-lover-left{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+    
+}
+
 /* join section related style */
 .join{
-    /* max-width: 1440px; */
-    margin-top: 130px;
+    max-width: 1140px; 
+    margin: 0 auto;
+    margin-top: 100px;
+    border: 2px solid red;
 }
 .text-container{
-    max-width: 1440px;
+    /* max-width: 1140px; */
     text-align: center;
     margin: 0 auto;
     justify-content: center;
     margin-bottom: 120px;
+    border: 2px solid red;
 
 }
 .img-container{
@@ -168,7 +209,12 @@ body{
     gap: 28px;
     text-align: center;
     color: white; 
-    
+    border: 2px solid red;
+}
+.img-container img{
+    width: 100%;
+    height: 100%;
+    flex: 1;
 }
 .first-column-upper-img{
     position: relative;
@@ -180,6 +226,7 @@ body{
     position: relative;
 }
 .text{
+    width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -189,12 +236,14 @@ body{
 .text h2{
     font-weight: bold;
     font-size: 2.5rem;
-    width: 400px;
+    width: 100%;
+    text-align: center;
 }
 .text h3{
-    width: 300px;
+    max-width: 280px;
     font-size: 1.2rem;
     font-weight: 500;
+    margin-left: 50px;
 }
 .second-column-img a{
     color: white;
@@ -203,7 +252,6 @@ body{
 }
 .deal-bloom, .deal-ana{
     height: 50%;
-    flex: 1;
     border-radius: 14px;
 }
 .first-column-img a{
@@ -214,28 +262,23 @@ body{
     color: white;
     
 }
-.first-column-img > img{
-    width: 365px;
-    height: 420px;
-    
-}
-.second-column-img > img{
-    width: 750px;
-    height: 420px;
-    border-radius: 20px;
-}
+
 .colurful-bunch{
-    max-width: 1440px;
-    height: 535px;
+    /* max-width: 1440px; */
+    width: 100%;
     margin: 0 auto;
     margin-top: 120px;
     text-align: center;
     position: relative;
 }
-.colorful-imag{
-    /* width:1440px;
-    height: 535px;
-    align-items: center; */
+.colorful-img{
+     /* width:1440px; */
+    width: 100%; 
+    height: auto;
+    display: block;
+    align-items: center; 
+    margin: 0 auto;
+    /* padding-left: 30px; */
 }
 .form{
     position: absolute;
@@ -243,6 +286,7 @@ body{
     left: 50%;
     transform: translate(-50%,-50%);
     color: white;
+    border: 2px solid red;
 }
 .btn-subscribe{
     width: 185px;
@@ -254,82 +298,92 @@ body{
     margin: 0px;
     gap: 0px;
     border: none;
+    border: 2px solid red;
+    align-items: center;
 }
 /* footer related style */
 .footer{
-    max-width: 1140px;
+    max-width: 1440px;
+    width: 100%;
     margin: 0 auto;
     justify-content: space-around;
     align-items: center;
     margin-top: 50px;
+    border: 2px solid red;
 }
 .footer-img{
     width: 360px;
+    border: 2px solid red; 
+   
+    
+
 }
 .footer-list{
     list-style: none;
     gap: 30px;
+    margin-left: 110px;
+    border: 2px solid red;
 }
 .list-item li{
-    margin-bottom: 15px;
+    margin-bottom: 30px;
+}
+.list-item  :hover{
+    color: #E95A08;
+    text-decoration: underline;
+    cursor: pointer;
 }
 .icon{
-    margin-left: 100px;
+     border: 2px solid red; 
+     margin-left: 50px; 
+    
 
 }
 .icon img{
-    margin-left: 15px;
+    cursor: pointer;
+    
 }
+
+
 /* For mobile responsive */
-@media screen and (max-width:576px) {
-     .navbar{
-        padding: 25px;
-    }
-    .nav-item{
-        margin: 0px;
-    } 
+@media screen and (max-width: 576px) {
     .Menu{
         display: none;
     }
-    .banner h2{
-        font-size: 24px;
-        font-weight: bold;
-         width: 190px;
-        height: 33px;
-        margin-bottom: 40px; 
-    }
-    
-    
     .banner{
         flex-direction: column-reverse;
-        gap: 20px;
     }
-    .banner-left{
-        padding: 20px;
+    .footer, .img-container{
+        flex-direction: column;
     }
-    .banner-right img{
-        width: 100%;
+    .icon, .footer-list{
+        margin: 0px;
+    }
+    .text h3{
+        margin-left: 50px;
     }
     .card-container{
         display: grid;
         grid-template-columns: repeat(2,1fr);
     }
-    .trusted-badge{
-        display: none;
+    .card{
+        width: 100%;
     }
     .plants-lover{
         flex-direction: column;
     }
-    .plants-lover-left{
+    .trusted-badge{
+        display: none;
+    }
+    .flower-store{
         width: 100%;
     }
-    .img-container{
-        flex-direction: column;
+    .font{
+        font-size: 2rem;
     }
-    .join{
-        margin-top: 900px;
+    br{
+        display: none;
     }
-    .colurful-bunch{
-        width: 100%;
+    .banner h2{
+        font-size: 2rem;
     }
 }
